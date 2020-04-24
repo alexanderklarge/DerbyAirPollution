@@ -1,70 +1,89 @@
+<!DOCTYPE html>
 <html>
+
   <head>
-      <title>Derby Air Pollution Weekly Graphs</title>
+      <meta charset="utf-8">
+      <meta name="description" content="Analysis of Derby Air Pollution from the government sensor on St Alkmund's Way"> <!-- For SEO, will be what is displayed in Google-->
+      <meta name="keywords" content="Derby Air Pollution"> <!-- For SEO-->
+      <meta name="author" content="Alexander Large">
+      <link rel="stylesheet" href="css/styles.css"> <!-- Points to the CSS style file-->
+      <title>🐏Derby Air Pollution🏭</title>
   </head>
 
   <body>
-    	<h1>Derby Air Pollution Graphs</h1>
-      
-        <p>Hi there! I'm analysing the air pollution data from Derby's sole AURN sensor.</p>
-        <hr/> <!-- This adds a horizontal line-->
+    	<h1>🐏Derby Air Pollution Graphs🏭</h1>
+        <p>
+        	<em>Alexander Large, Junior Data Analyst, <strong>alexanderklarge@gmail.com</strong></em>
+        	<br><br>
+	        Hi there! 
+	        My name's Alex and I'm analysing the air pollution data from Derby's sole AURN sensor.
+	        <br><br>
+	        If you have any <strong>questions</strong> or <strong>feature requests</strong> feel free to get in touch! <a href="contact.html"><strong>Contact Me</strong></a> page.
+	        <br><br>
+	        For more information about the data and this project see the <a href="about.html"><strong>About</strong></a> page.
+    	</p>
+        <hr> <!-- This adds a horizontal line-->
 
-        <!--Graph 1-->
+        <h3> Information About The Data </h3>
+        <ul>
+        	<li> The data is from the <strong>DEFRA</strong> (Department for Environment Food & Rural Affairs) <a href="https://uk-air.defra.gov.uk/interactive-map"><strong>Automatic Urban and Rural Network (AURN) map</strong></a> </li>
+        	<li> The sensor takes <strong>hourly</strong> readings, and the DEFRA website updates with a new .csv file at the end of every day </li>
+        	<li> The sensor measures levels of <strong>Nitric Oxide</strong> and <strong>Nitrogen Dioxide</strong>. Other sensors also measure methane, PM2.5s etc, but sadly the Derby sensor doesn't.</li>
+        	<li> The sensor has been operational since the <strong>22nd of January 2017</strong>
+        	<li> <strong>Python</strong> code to clean the raw data and output various graphs (the <strong>GitHub</strong> repo of code used to make the below graphs & this site can be found <a href="https://github.com/alexanderklarge/DerbyAirPollution"><strong>here</strong></a>) </li>
+        </ul>
+	
+        <hr>
+
+        <!--Graph 1 and 2-->
         <h2> Weekly 2020 Pollution vs Mean and Median of Previous Years</h2>
-        <img src="Images/05. Weekly 2020 Pollution VS Mean and Median Full.png"/>
-        <hr/>
+        <p> The below 2 graphs show the total weekly pollution of 2020 compared to the mean (average) and median (middle, more reliable than the mean) of the previous 3 years of data, to help compare 2020 to what is "normal".</p>
+        <img src="Images/05. Weekly 2020 Pollution VS Mean and Median Full Tight.png" alt="Weekly 2020 Derby Pollution VS Mean and Median"/>
         <br/>
 
-        <!--Graph 2-->
-        <h2> Weekly 2020 Pollution vs Mean and Median of Previous Years, Zoomed In</h2>
-        <img src="Images/04. Weekly 2020 Pollution VS Mean and Median.png"/>
+        <p>(The below graph is simply a zoomed in version of above)</p>
+        <img src="Images/04. Weekly 2020 Pollution VS Mean and Median.png" alt="Weekly 2020 Derby Pollution VS Mean and Median zoomed in"/>
         <hr/>
-        <br/>
 
-        <!--Graph 3-->
+        <!--Graph 3 and 4-->
         <h2> Total Weekly Pollution, Comparing Each Year</h2>
+        <p> The below graphs show all 4 years worth of data plotted together. This is useful as you can see the value for each year, but it is much harder to assess general trends, which is why graphs 1 and 2 are more useful at-a-glance.</p>
         <img src="Images/02. Weekly Pollution All Years.png"/>
-	    <hr/>
         <br/>
 
-        <!--Graph 4-->
-        <h2> Total Weekly Pollution, Comparing Each Year, Zoomed In</h2>
+        <p> Again, below is simply a zoomed in version of above </p>
         <img src="Images/03. Weekly Pollution All Years Zoomed.png"/>
         <hr/>
-        <br/>
 
         <!--Graph 5-->
         <h2> Hourly Pollution In The 4 Week Window Immediately After Lockdown</h2>
+        <p> The lockdown was officially announced on the 23rd of March, 2020. It is useful to compare the 4-week window from the lockdown (23/3/2020 - 19/4/2020) to the same window of previous years, to get a basic idea of the effect of the lockdown.</p>
         <img src="Images/01. 4 Week Window Post Lockdown.png"/>
         <hr/>
-        <br/><!-- This adds a line break-->
 
         <!--Graph 6-->
-        <h2> 2020 Weekly Total Pollution Vs Median Of Previous Years</h2>
-        <img src="Images/06. Total Pollution VS Median Of Previous Years.png"/>
+        <h2> 2020 Weekly Total Pollution As % of Median of Previous Years</h2>
+        <p> If we take the median value of each week as the "normal" value for pollution for that week, we can then compare the 2020 value and see whether it is higher or lower than "normal".</p>
+        <img src="Images/06. 2020 Weekly Total Pollution Vs Median Of Previous Years.png"/>
         <hr/>
-        <br/><!-- This adds a line break-->
 
         <!--Graph 7-->
         <h2> Monthly 2020 Pollution VS Median Of Previous Years</h2>
+        <p> Comparing the total measured pollution in each month of 2020 to the median of previous years </p>
         <img src="Images/07a. Monthly 2020 Pollution VS Median Of Previous Years.png"/>
         <hr/>
         <br/><!-- This adds a line break-->
 
-        <!--Graph 8-->
-        <h2> Monthly 2020 Pollution VS Median Of Previous Years, Heatmap</h2>
+        <p> Below is the same graph as above but as a heatmap, so the numerical values are visible.</p>
         <img src="Images/07b. Monthly Pollution 2020 VS Median.png"/>
-        <hr/>
         <br/><!-- This adds a line break-->
 
         <!--Graph 9-->
-        <h2> Average Hourly Pollution Per Day</h2>
+        <h2> Average Hourly Pollution Per Day and Quarter</h2>
+        <p> The final two graphs are just quick ones to look at overall trends in the whole dataset </p>
         <img src="Images/08. Average Hourly Pollution Per Day.png"/>
-        <hr/>
-        <br/><!-- This adds a line break-->
 
         <!--Graph 10-->
-        <h2> Average Hourly Pollution Per Quarter</h2>
         <img src="Images/09. Average Hourly Pollution Per Quarter.png"/>
         <hr/>
         <br/><!-- This adds a line break-->
