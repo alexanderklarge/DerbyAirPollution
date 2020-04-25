@@ -1,23 +1,35 @@
-body {
-  		background-color: #F1F0F7;
+/**************************Tag Selectors**************************/
 
+body {
+  		background-color: #E3EBFF;
   	}
-  	hr {
-  		background-color: white;
-  		border-style: dotted none none;
-  		height: 0px;
-  		width: 95%;
-  		border-top: dotted;
-  		border-color: grey;
-  		border-width: 4px;
-  		width: 95%;
-  	}
-  	img {
-  		width: 50%;
-  	}
-    h1 {
-      color: #031927
-    }
-    p {
-      font-size: 17px;
-    }
+hr {
+	background-color: white;
+	border-style: dotted none none;
+	height: 0px;
+	width: 95%;
+	border-top: dotted;
+	border-color: grey;
+	border-width: 4px;
+	width: 95%;
+	}
+img {
+	width: 75%;
+ }
+h1 {
+  color: #031927
+}
+p {
+  font-size: 17px;
+}
+
+/**************************Class Selectors**************************/
+.profile {
+  width : 20%;
+}
+.circular {
+  border-radius: 100%;  
+}
+.Ross:hover {
+  border-radius: 0%;
+}
