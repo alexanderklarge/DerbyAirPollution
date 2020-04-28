@@ -45,6 +45,14 @@ p {
 .Ross:hover {
   border-radius: 0%;
 }
-.top-div{
-
+.sidebyside{
+	.text-align: center;
+}
+.side{
+	width: 45%;
+	display: inline-block;
+	margin: 0 auto;
+}
+.solo{
+	width: 60%
 }
