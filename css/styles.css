@@ -2,6 +2,8 @@
 
 body {
   		background-color: #E3EBFF;
+  		font-family: 'Merriweather', serif;
+  		padding-left: 15px;
   	}
 hr {
 	background-color: white;
@@ -18,6 +20,16 @@ img {
  }
 h1 {
   color: #031927
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3em;
+}
+h2 {
+  color: #031927
+  font-family: 'Montserrat', sans-serif;
+}
+h3 {
+  color: #031927
+  font-family: 'Montserrat', sans-serif;
 }
 p {
   font-size: 17px;
@@ -32,4 +44,7 @@ p {
 }
 .Ross:hover {
   border-radius: 0%;
+}
+.top-div{
+
 }
