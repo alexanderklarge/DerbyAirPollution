@@ -4,22 +4,31 @@
 		<meta charset="utf-8">
 		<title>About: Derby Air Pollution Project</title>
 		<link rel="stylesheet" href="css/styles.css"> <!-- Points to the CSS style file-->
+		<link rel="icon" href="favicon.ico">
 	</head>
 
 	<body>
-		<h1>📊  About The Project  📊</h1>
-		<hr>
-		<a href="index.html"><strong>(Back To Home Page)</strong></a>
+		<div>
+			<h1>📊  About The Project  📊</h1>
+
+			<a class="offset" href="index.html"><strong>(Back To Home Page)</strong></a>
+			<hr>
+		</div>
+
 		<h2>Extra information about the data</h2>
-		<p> The DEFRA website for the air pollution network looks like:</p>
-        <img src="Images/About/1.png" alt="UK DEFRA Air Pollution Map"/>
-        <p> The sole Derby sensor is located:</p>
-		<img src="Images/About/2.png" alt="UK DEFRA Air Pollution Map"/>
-		<p> On the DEFRA website, you can only see a graph for the last 7 days of data, which is essentially useless. This is what led me to start this project:</p>
-		<img src="Images/About/3.png" alt="UK DEFRA Air Pollution Map"/>
-        <p> The data can be downloaded as raw .csv files:</p>
-		<img src="Images/About/4.png" alt="UK DEFRA Air Pollution Map"/>
-		<p> The raw data looks like below. This would be cumbersome to analyse in Excel, hence the creation of a Python project:</p>
-		<img src="Images/About/5.png" alt="UK DEFRA Air Pollution Map"/>
+
+		<p> The DEFRA <a href="https://uk-air.defra.gov.uk/interactive-map"> Interactive monitoring networks map </a> is pictured below. There is a sole sensor in Derby, located as the St Alkmund's bridge, as shown in the second screenshot. </p>
+
+		<div class="sidebyside">
+	        <img class="side" src="Images/About/1.png" alt="UK DEFRA Air Pollution Map"/>
+			<img class="side" src="Images/About/2.png" alt="UK DEFRA Air Pollution Map"/>
+		</div>
+
+        <p> The data from each sensor can be downloaded as raw csv files, as shown below. This allows analysis in Microsoft Excel, but daily re-downloading of the files would be needed to get up-to-date data. Python, a programming language, can be used to automatically pull the data from the csv files, clean the data (i.e. remove unwanted columns) and create graphs which update each week.</p>
+
+        <div class="sidebyside">
+			<img class="side" src="Images/About/4.png" alt="UK DEFRA Air Pollution Map"/>
+			<img class="side" src="Images/About/5.png" alt="UK DEFRA Air Pollution Map"/>
+		</div>
 	</body>
 </html>

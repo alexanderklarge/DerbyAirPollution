@@ -2,7 +2,7 @@
 
 body {
   		background-color: #E3EBFF;
-  		font-family: 'Merriweather', serif;
+  		font-family: 'Roboto', sans-serif;
   		padding-left: 15px;
   	}
 hr {
@@ -55,4 +55,8 @@ p {
 }
 .solo{
 	width: 60%
+}
+.offset{
+	left:3em;
+	position: relative;
 }
